@@ -6,7 +6,8 @@ usemockups.views.PropertyDialog = Backbone.View.extend({
         'submit': 'submit',
         'click .send-to-back': 'send_to_back',
         'click .bring-to-front': 'bring_to_front',
-		'click .center-item': 'center_item'
+        'click .center-item': 'center_item',
+        'click .technical_detail': 'technical_detail'
     },
     initialize: function () {
         this.on("update_for_attribute", this.update_for_attribute);
@@ -101,6 +102,9 @@ usemockups.views.PropertyDialog = Backbone.View.extend({
             "z_index":  usemockups.views.Mockup.prototype.max_z_index + 1
         });
         return false;
+    },
+    technical_detail: function (){
+        console.log("selam şeyma");
     }
 
 });
