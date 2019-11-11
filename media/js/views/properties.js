@@ -104,7 +104,8 @@ usemockups.views.PropertyDialog = Backbone.View.extend({
         return false;
     },
     technical_detail: function (){
-        console.log("selam şeyma");
+        console.log("diz dize")
+        $('#exampleModalLong').modal('show');
     }
 
 });
