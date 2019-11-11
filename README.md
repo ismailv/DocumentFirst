@@ -18,4 +18,4 @@ Contributors
 -------------
 
  - [Andre Miras](http://github.com/AndreMiras)
- - [Fatih Erikli] (https://github.com/fatiherikli)
+ - [Fatih Erikli](https://github.com/fatiherikli)
