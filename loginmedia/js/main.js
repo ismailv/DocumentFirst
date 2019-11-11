@@ -76,12 +76,6 @@ function checkCredentials(){
         $(thisAlert).removeClass('alert-validate');
         $(thisAlert).find('.btn-hide-validate').remove();
     }
-    
-    $('form').on('submit', function(event) {
-        alert("sa");
-        checkCredentials();
-    });
-    
 
 })(jQuery);
 
@@ -90,6 +84,7 @@ $(document).ready(function() {
         var username =  document.getElementById("username").value;
         var password =  document.getElementById("pass").value;
         console.log(username  +'-'+ password);
+        sessionStorage.setItem("username", username);
     
         window.location.replace("./detail.html");
     }); 

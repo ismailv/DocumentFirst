@@ -17,7 +17,7 @@
         <a class="documents">Select a Document</a>
         <a class="properties">Properties</a>
         <a class="import-export">Import / Export</a>
-
+        <a class="logout" style="margin-top: 5px;" href="./index.html">Logout</a>
         <section id="documents">
             <h3>Documents</h3>
             <ul></ul>
@@ -239,6 +239,9 @@
 
     <script type="text/javascript">
         // namespace definition
+        var username = sessionStorage.getItem("username");
+        console.log("username", username);
+        document.title = "Mockup Designer for "+ username[0].toUpperCase() + username.slice(1);
         var usemockups = {
             models: {},
             collections: {},
